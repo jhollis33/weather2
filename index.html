@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="stay">
+      <form id="search-form">
+        <input type="text" placeholder="Search..." autocomplete="off" id="search-input"/>
+        <input type="submit" value="Enter" class="btn btn-primary"/>
+      </form>
+
+      <button class= "bbtn btn-success" id="current-location">Current Location</button>
+   
+      <h1 id="city">
+        </h1>
+       
+        <span>Date<h2 id="date"></h2></span>
+        <span>Description<h2 id="description"></h2></span>
+        <span>Current Temperature(°F)</span><h2 id="current-temperature"></h2></span>
+        <span>Humidity<h2 id="humidity"></h2></span>
+        <span>Wind Speed<h2 id="wind"></h2></span>
+        </div>
+        
+        
+
+      <ul>
+        <li>
+          Tomorrow
+          <p>High ⛅️ 62&deg;/ Low 🌦55&deg</p>
+        </li>
+
+        <li>
+          Tuesday
+          <p>High ☀️ 75&deg;/ Low ⛅️65&deg</p>
+        </li>
+
+        <li>
+          Wednesday
+          <p>High 🌦 57&deg;/ Low ⛈ 52&deg</p>
+        </li>
+
+        <li>
+          Thursday
+          <p>High ☀️ 72&deg;/ Low ⛅️ 59&deg</p>
+        </li>
+
+        <li>
+          Friday
+          <p>High ☀️ 72&deg;/ Low ⛅️ 59&deg</p>
+        </li>
+
+        <li>
+          Saturday
+          <p>High ☀️ 72&deg;/ Low ⛅️ 59&deg</p>
+        </li>
+      </ul>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
